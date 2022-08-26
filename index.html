@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="page">
-        <section class="container">
+<body >
+    <div class="page" >
+        <section class="container" >
             <nav class="navbar">
                 <div class="navbar-content">
                     <img src="assets/img/Marvel_Studios_logo.svg.png" alt="">
@@ -25,9 +25,12 @@
             <section class="main-content">
                 <img src="assets/img/iron-man-vr.jpg" alt="">
 
-                <div class="main-content-info">
-                    <p>Diseña tu</p>
-                    <h1>Super Heroe !!</h1>
+                <div class="main-content-info" >
+                    <div >
+                        <img src="assets/img/logo_ironman.png" alt="" >
+                        <h1>IRON MAN - VR</h1>
+                    </div>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores unde reiciendis nemo nostrum ipsa illum maxime, iure commodi adipisci.</p>
                 </div>
                
@@ -36,12 +39,12 @@
            
 
             <section class="footer">
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+                <div><img src="assets/img/iron-man-mark-4.png" alt=""></div>
+                <div><img src="assets/img/iron-man-mark-4.png" alt=""></div>
+                <div><img src="assets/img/iron-man-mark-4.png" alt=""></div>
             </section>
         </section>
-        <section class="side-content">
+        <section class="side-content"  >
             <p>
                 
                 <span>I</span>
@@ -54,8 +57,9 @@
                 <span>N</span>
                 
             </p>
-            <img src="assets/img/IronMan.png" alt="">
-            <div></div>
+            
+            <img src="assets/img/IronMan.png" alt="" >
+
         </section>
         <!-- loader -->
         <!-- <section class="loader">
@@ -67,6 +71,10 @@
         <!-- Modal -->
         <section></section>
     </div>
-    
+    <script src="js/parallax.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
 </body>
 </html>
