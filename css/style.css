@@ -14,6 +14,7 @@
 body{
     height: 100vh;
     overflow: hidden;
+    background-color: #E9C81C;
     
     font: 400 16px/1.3 Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
     color: var(--text);
@@ -50,7 +51,7 @@ body{
     padding-right: 4rem;
     line-height: 4rem;
     text-align: center;
-    width: calc(100% - 4rem);
+    width: calc(100%);
     background-color: #EC1D24;
     font-size: 2rem;
     text-transform: uppercase;
@@ -154,7 +155,10 @@ span{
     width: 100%;
     display: flex;
     flex-direction: row;
-    animation: anim_navbar 0.8s ease-in-out;
+}
+.navbar-content{
+    animation: anim_navbar 1s ease-in-out;
+
 }
 @keyframes anim_navbar {
     0%{
@@ -212,18 +216,33 @@ a:hover{
     color: var(--red);
 }
 .main-content{
-    background-color: purple;
     height:  60vh;
 
     width: 100%;
 }
 .footer{
-    background-color: lightcoral;
+    background-color: var(--background-main);
     height:  32vh;
 
-    width: 100%;
+    width: 80%;
+    border-top-right-radius: 50px;
 }
 
 .main-content{
     display: flex;
+}
+.main-content img{
+
+    width: 80%;
+    object-fit: cover;
+    object-position: left;
+    clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+}
+.main-content-info{
+    background-color: #E9C81C;
+    color: var(--background-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
