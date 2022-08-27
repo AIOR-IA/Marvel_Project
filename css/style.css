@@ -330,3 +330,25 @@ a:hover{
     clip-path: polygon(0% 0, 85% 0, 100% 0%, 100% 70%, 50% 100%, 50% 100%, 0 70%, 0 15%);
 }
 
+@media only screen and (max-width:1600px){
+    .side-content img{
+        z-index: 9;
+        height: 50%;
+        transform: translateX(-150px);
+        background-size: cover;
+        animation: intro-img 1.5s ease;
+    }
+    
+}
+@media only screen and (max-width:1200px){
+    .footer{
+        width: 95%;
+    }
+    .main-content img{
+
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+    
+}
+}
