@@ -19,6 +19,7 @@ body{
     
     font: 400 16px/1.3 Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
     color: var(--text);
+    user-select: none;
     
 }
 .page{
@@ -169,7 +170,10 @@ a:hover{
     color: var(--yellow);
     background-color: rgba(90, 90, 90, 0.3);
 }
-
+.navbar-content div{
+    font-size: 0.8rem;
+    padding-left: 10%;
+}
 
 /* MAIN CONTENT  */
 .main-content{
@@ -349,6 +353,11 @@ a:hover{
     width: 100%;
     object-fit: cover;
     object-position: right;
-    
-}
+    }
+    .navbar-content{
+        justify-content: flex-start;
+    }
+    a{
+        padding: 1rem;
+    }
 }
